@@ -1,0 +1,95 @@
+/* start code */
+
+.App /* global style */ {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  border-collapse: collapse;
+  background: #000000;
+  font-size: 6vmin;
+  text-align: center;
+  color: #ffffff;}
+
+.Key-A, .Key-B, .Key-C, .Key-D, .Key-E, .Key-F, .Key-G, .Key-H {
+  height: 8vmin;
+  width: 8vmin;
+  border: none;
+  background: #000000;}
+
+.Key-A:hover {background: #e64343;}
+.Key-B:hover {background: #e67b3d;}
+.Key-C:hover {background: #e6cd60;}
+.Key-D:hover {background: #53d34f;}
+.Key-E:hover {background: #52cddd;}
+.Key-F:hover {background: #4495ff;}
+.Key-G:hover {background: #4c57f1;}
+.Key-H:hover {background: #b157ec;}
+
+main {
+  position: absolute;
+  top: 10vmin;}
+
+.Default {
+  position: absolute;
+  top: 8.65vmin;
+  height: 85vmin;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+  font-weight: bolder;}
+
+.Default-Logo {
+  height: 24vmin;
+  width: 24vmin;
+  border: 1vmin solid #000000;
+  border-radius: 50%;
+  margin: 4vmin;
+  animation: whoosh infinite 15s linear;}
+@keyframes whoosh /* animation */ {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}}
+.Default-Title {
+  margin: 0;
+  font-size: 8vmin;
+  font-weight: bolder;}
+.Default-Subtitle {
+  margin: 0;
+  font-size: 4vmin;
+  font-weight: bolder;}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vmin 0; /* vertical padding adjustment */
+  background: #000000;
+  font-size: 2vmin;}
+
+.Link-1, .Link-2, .Link-3 {
+  margin: 0 0 0 2vmin;  /* horizontal margin only */
+  text-decoration: none;
+  color: #ffffff;}
+.Link-4 {
+  margin: 0 2vmin 0 auto;  /* horizontal margin only */
+  text-decoration: none;
+  color: #ffffff;}
+
+.Link-1:hover, .Link-2:hover, .Link-3:hover, .Link-4:hover {color: #58c2ff;}
+
+/* end code */

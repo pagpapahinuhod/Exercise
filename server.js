@@ -1,7 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-const uri = "mongodb+srv://pagpapahinuhod:<autopass>@cluster0.oib0cwk.mongodb.net/?retryWrites=true&w=majority"
+const app = express();
+const port = process.env.PORT || 5000; //http://localhost:5000
+
+const uri = "mongodb+srv://pagpapahinuhod:autopass@cluster0.oib0cwk.mongodb.net/?retryWrites=true&w=majority"
 mongoose.connect(process.env.MONGODB_URI || uri, { useNewUrlParser: true, useUnifiedTopology: true }).catch(error => console.log(error));
 
 const connection = mongoose.connection;

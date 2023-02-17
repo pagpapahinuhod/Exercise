@@ -1,9 +1,9 @@
 /*start code */
 
-import React from "react"; /*for functions */
+import React from 'react'; /*for functions */
 import "./App.css"; /* for styles */
-import logo from "./assets/images/doge.jpg"; /* for logo */
-import sample from "./assets/images/sample-image.jpg"; /* for sample images */
+import Logo from "./assets/images/doge.jpg"; /* for logo */
+import Sample from "./assets/images/sample-image.jpg"; /* for sample images */
 
 /* mui block */
 import Box from '@mui/material/Box';
@@ -13,28 +13,27 @@ import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import Typography from '@mui/material/Typography';
 import {ThemeProvider, createTheme} from '@mui/material/styles';
+import {HomeOutlined, GroupsOutlined, HandshakeOutlined, SaveAltOutlined} from '@mui/icons-material';
 
 /*mui global style */
-const globalTheme = createTheme({
-  typography: {
-    fontFamily: 'Kanit',}});
+const globalTheme = createTheme({typography:{fontFamily: 'Kanit'}});
 
 /* mui tabs */
 function TabPanel(props) {
   const {children, value, index, ...other} = props;
   return (
-    <div role = "tabpanel" hidden = {value !== index} id = {`simple-tabpanel-${index}`} aria-labelledby = {`simple-tab-${index}`} {...other}>
-        {value === index && (<Box sx = {{ p: 2 }}><Typography>{children}</Typography></Box>)}
+    <div role = "tabpanel" hidden = {value !== index} id = {`simple-tabpanel-${index}`} aria-labelledby = {`simple-tab-${index}`} {...other }>
+        {value === index && (<Box sx = {{p: 2}}><Typography>{children}</Typography></Box>)}
     </div>);}
-TabPanel.propTypes = {children: PropTypes.node, index: PropTypes.number.isRequired, value: PropTypes.number.isRequired,};
-function a11yProps(index) {return {id: `simple-tab-${index}`, 'aria-controls': `simple-tabpanel-${index}`, };}
+TabPanel.propTypes = {children: PropTypes.node, index: PropTypes.number.isRequired, value: PropTypes.number.isRequired};
+function a11yProps(index) {return {id: `simple-tab-${index}`, 'aria-controls': `simple-tabpanel-${index}`,};}
 
 /* loadable user interface */
 function ButtonSwitch(props) {
   const {shortButtonValue} = props;  
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {setValue(newValue);};
-
+  /* main loadable user interface */
   switch (shortButtonValue) {
     case "A": return /*personal information */ (
       <><main>
@@ -67,10 +66,10 @@ function ButtonSwitch(props) {
             </Tabs>
           </Box>
           <TabPanel value = {value} index = {0}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={4} sx={{ m: '4vmin' }}>
-                <Grid xs={6}>
-                  <img src = {sample} className = "Sample-Image" alt = "Sample"/>
+            <Box sx = {{flexGrow: 1}}>
+              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+                <Grid xs = {6}>
+                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
                 </Grid>
                 <Grid xs={6}>
                   <h1>Eartheye Space</h1>
@@ -82,12 +81,12 @@ function ButtonSwitch(props) {
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {1}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={4} sx={{m: '4vmin'}}>
-                <Grid xs={6}>
-                  <img src = {sample} className = "Sample-Image" alt = "Sample"/>
+            <Box sx = {{flexGrow: 1}}>
+              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+                <Grid xs = {6}>
+                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs = {6}>
                   <h1>ICEYE</h1>
                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
                   <br></br><br></br>
@@ -97,12 +96,12 @@ function ButtonSwitch(props) {
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {2}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={4} sx={{ m: '4vmin' }}>
-                <Grid xs={6}>
-                  <img src = {sample} className = "Sample-Image" alt = "Sample"/>
+            <Box sx = {{flexGrow: 1}}>
+              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+                <Grid xs = {6}>
+                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs = {6}>
                   <h1>NTT DATA</h1>
                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
                   <br></br><br></br>
@@ -112,12 +111,12 @@ function ButtonSwitch(props) {
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {3}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={4} sx={{ m: '4vmin' }}>
-                <Grid xs={6}>
-                  <img src = {sample} className = "Sample-Image" alt = "Sample"/>
+            <Box sx = {{flexGrow: 1}}>
+              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+                <Grid xs = {6}>
+                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs = {6}>
                   <h1>planet.</h1>
                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
                   <br></br><br></br>
@@ -127,12 +126,12 @@ function ButtonSwitch(props) {
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {4}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={4} sx={{ m: '4vmin' }}>
-                <Grid xs={6}>
-                  <img src = {sample} className = "Sample-Image" alt = "Sample"/>
+            <Box sx = {{flexGrow: 1}}>
+              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+                <Grid xs = {6}>
+                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs = {6}>
                   <h1>RESTEC</h1>
                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
                   <br></br><br></br>
@@ -142,10 +141,10 @@ function ButtonSwitch(props) {
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {5}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={4} sx={{ m: '4vmin' }}>
-                <Grid xs={6}>
-                  <img src = {sample} className = "Sample-Image" alt = "Sample"/>
+            <Box sx = {{flexGrow: 1}}>
+              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+                <Grid xs = {6}>
+                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
                 </Grid>
                 <Grid xs={6}>
                   <h1>SPACEKNOW</h1>
@@ -162,31 +161,31 @@ function ButtonSwitch(props) {
       <ThemeProvider theme = {globalTheme}>
         <Box className = "Tabs-Container">
           <Box className = "Tabs-Header"><h1>Our Products</h1></Box>
-          <Box sx = {{widthborderBottom: 2, borderColor: 'divider' }}>
+          <Box sx = {{widthborderBottom: 2, borderColor: 'divider'}}>
             <Tabs value = {value} onChange={handleChange} aria-label = "basic tabs example" centered>
               <Tab label = "PCiS" {...a11yProps(0)} />
               <Tab label = "SEEDs" {...a11yProps(1)} />
             </Tabs>
           </Box>
           <TabPanel value = {value} index = {0}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={4} sx={{ m: '4vmin' }}>
-                <Grid xs={6}>
-                  <img src = {sample} className = "Sample-Image" alt = "Sample"/>
+            <Box sx = {{flexGrow: 1}}>
+              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+                <Grid xs = {6}>
+                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs = {6}>
                   <h1>PCiS</h1>
                 </Grid>
               </Grid>
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {1}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={4} sx={{ m: '4vmin' }}>
-                <Grid xs={6}>
-                  <img src = {sample} className = "Sample-Image" alt = "Sample"/>
+            <Box sx = {{flexGrow: 1}}>
+              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+                <Grid xs = {6}>
+                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs = {6}>
                   <h1>SEEDs</h1>
                 </Grid>
               </Grid>
@@ -194,19 +193,32 @@ function ButtonSwitch(props) {
           </TabPanel>
         </Box>
       </ThemeProvider>);
-    case "F": return  /* leaflet practice */ (<><main className = "Placeholder">TEST F</main></>);
+    case "F": return  /* leaflet practice */ (
+      <ThemeProvider theme = {globalTheme}>
+        <Box className = "Tabs-Container">
+          <Box className = "Tabs-Header"><h1>Our Location</h1></Box>
+        </Box>
+      </ThemeProvider>);
     case "G": return (<><main className = "Placeholder">TEST G</main></>);
     case "H": return (<><main className = "Placeholder">TEST H</main></>);
     default:
       return (
         <main className = "Default">
-          <img src = {logo} className = "Default-Logo" alt = "Logo"/>
+          <img src = {Logo} className = "Default-Logo" alt = "Logo"/>
           <p className = "Default-Title">THIS IS A TEST WEBSITE</p>
           <p className = "Default-Subtitle">bork bork</p>
         </main>);}}
 
 function App() {
-  const buttonValuesArray = ["A", "B", "C", "D", "E", "F", "G", "H"];
+  const buttonValuesArray = [
+    {name: "A", icon: HomeOutlined},
+    {name: "B", icon: HomeOutlined},
+    {name: "C", icon: GroupsOutlined},
+    {name: "D", icon: HandshakeOutlined},
+    {name: "E", icon: SaveAltOutlined},
+    {name: "F", icon: HomeOutlined},
+    {name: "G", icon: HomeOutlined},
+    {name: "H", icon: HomeOutlined}];
   const [buttonValue, setButtonValue] = React.useState("0"); 
   const [oldValue, setOldValue] = React.useState("Z");
   /* button interaction functions */
@@ -219,19 +231,18 @@ function App() {
       setOldValue(newValue);}}
   const hoverButton = (newValue) => {setButtonValue(newValue);}
   const exitButton = () => {setButtonValue(oldValue);}
-  /*main user interface */
   return (
     <div className = "App">
       <ButtonSwitch shortButtonValue = {buttonValue}/>
       <header>
         {buttonValuesArray.map((buttonName) => (
-          <div
-            className = {"Key-"+buttonName}
-            onClick = {() => {clickButton(buttonName)}}
-            onMouseOver = {() => hoverButton(buttonName)}
-            onMouseOut = {() => exitButton(buttonName)}>
-              <div>{buttonName}</div>
-          </div>))}
+            <div
+              className = {`Key-${buttonName.name}`}
+              onClick = {() => {clickButton(buttonName.name)}}
+              onMouseOver = {() => hoverButton(buttonName.name)}
+              onMouseOut = {() => exitButton(buttonName.name)}>
+                <buttonName.icon className="" fontSize = "large"/>
+            </div>))}
       </header>
       <footer>
         <a className = "Link-1" href = "https://linkedin.com/in/andrew-timothy-cervantes" rel = "noreferrer" target = "_blank">LinkedIn</a>

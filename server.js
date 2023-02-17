@@ -11,7 +11,7 @@ const connection = mongoose.connection;
 connection.once('open', () => {
   console.log("Ze MongoDB databeyz connezion haz veen establizhed zuccesfully...");
 
-  app.use(bodyParser.urlencoded({limit: '100mb', extended: true}))
+  // app.use(bodyParser.urlencoded({limit: '100mb', extended: true}))
   // app.use(bodyParser.json({limit: '1000mb'}))
 
   app.use(express.static(path.join(__dirname, 'client/build')));

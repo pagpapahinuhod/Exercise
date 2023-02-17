@@ -1,9 +1,11 @@
 /*start code */
 
-import React from 'react'; /*for functions */
+import React from "react"; /*for functions */
 import "./App.css"; /* for styles */
 import Logo from "./assets/images/doge.jpg"; /* for logo */
 import Sample from "./assets/images/sample-image.jpg"; /* for sample images */
+import "leaflet/dist/leaflet.css"; /* for leaflet */
+import LeafletMap from "./assets/maps/maps.js"; /* for map */
 
 /* mui block */
 import Box from '@mui/material/Box';
@@ -197,6 +199,12 @@ function ButtonSwitch(props) {
       <ThemeProvider theme = {globalTheme}>
         <Box className = "Tabs-Container">
           <Box className = "Tabs-Header"><h1>Our Location</h1></Box>
+          reactDOM.render(
+            <React.StrictMode>
+              <LeafletMap />
+            </React.StrictMode>,
+            document.getElementById('root')
+          );
         </Box>
       </ThemeProvider>);
     case "G": return (<><main className = "Placeholder">TEST G</main></>);

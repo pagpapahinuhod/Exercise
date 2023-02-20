@@ -200,12 +200,12 @@ function ButtonSwitch(props) {
           <Box className = "Tabs-Header-Leaflet"><h1>Our Location</h1></Box>
         </Box>
       </ThemeProvider>
-      <MapContainer id = "MapRender" center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true} key={new Date().getTime()}>
+      <MapContainer id = "MapRender" center={[14.5818781, 121.0605654]} zoom={15} scrollWheelZoom={true} key={new Date().getTime()}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={[51.505, -0.09]}>
+          <Marker position={[14.5818781, 121.0605654]}>
             <Popup>
               A pretty CSS3 popup. <br /> Easily customizable.
             </Popup>

@@ -66,9 +66,26 @@ main {
 .Sample-Image {
   width: 95%;}
 
-.map {
+.Tabs-Container-Leaflet {padding: 8vmin;}
+.Tabs-Header-Leaflet {
+  position: absolute;
+  width: 25%;
+  margin: 2vmin auto 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 1vmin solid #000000;}
+
+#MapRender {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  height: 100%;
   width: 100%;
-  height: 100%;}
+}
 
 .Default {
   display: flex;

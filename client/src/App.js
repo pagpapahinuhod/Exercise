@@ -1,11 +1,10 @@
 /*start code */
 
-import React from "react"; /*for functions */
+import React from "react"; /* for functions */
 import "./App.css"; /* for styles */
 import Logo from "./assets/images/doge.jpg"; /* for logo */
 import Sample from "./assets/images/sample-image.jpg"; /* for sample images */
-import "leaflet/dist/leaflet.css"; /* for leaflet */
-import LeafletMap from "./assets/maps/maps.js"; /* for map */
+import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet"; /* for leaflet react */
 
 /* mui block */
 import Box from '@mui/material/Box';
@@ -196,17 +195,22 @@ function ButtonSwitch(props) {
         </Box>
       </ThemeProvider>);
     case "F": return  /* leaflet practice */ (
-      <ThemeProvider theme = {globalTheme}>
-        <Box className = "Tabs-Container">
-          <Box className = "Tabs-Header"><h1>Our Location</h1></Box>
-          reactDOM.render(
-            <React.StrictMode>
-              <LeafletMap />
-            </React.StrictMode>,
-            document.getElementById('root')
-          );
+      <><ThemeProvider theme = {globalTheme}>
+        <Box className = "Tabs-Container-Leaflet">
+          <Box className = "Tabs-Header-Leaflet"><h1>Our Location</h1></Box>
         </Box>
-      </ThemeProvider>);
+      </ThemeProvider>
+      <MapContainer id = "MapRender" center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true} key={new Date().getTime()}>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={[51.505, -0.09]}>
+            <Popup>
+              A pretty CSS3 popup. <br /> Easily customizable.
+            </Popup>
+          </Marker>
+        </MapContainer></>);
     case "G": return (<><main className = "Placeholder">TEST G</main></>);
     case "H": return (<><main className = "Placeholder">TEST H</main></>);
     default:

@@ -3,31 +3,32 @@
 import React from "react"; /* for functions */
 import "./App.css"; /* for styles */
 import Logo from "./assets/images/doge.jpg"; /* for logo */
-import Sample from "./assets/images/sample-image.jpg"; /* for sample images */
+import Sample from "./assets/images/sample-image.jpg" /* for sample image */
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet"; /* for leaflet react */
 
 /* mui block */
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Unstable_Grid2';
-import PropTypes from 'prop-types';
-import Tab from '@mui/material/Tab';
-import Tabs from '@mui/material/Tabs';
-import Typography from '@mui/material/Typography';
-import {ThemeProvider, createTheme} from '@mui/material/styles';
-import {HomeOutlined, GroupsOutlined, HandshakeOutlined, SaveAltOutlined} from '@mui/icons-material';
+import {ThemeProvider, createTheme} from "@mui/material/styles";
+import {HomeOutlined, GroupsOutlined, HandshakeOutlined, SaveAltOutlined} from "@mui/icons-material";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Unstable_Grid2";
+import Image from "mui-image";
+import PropTypes from "prop-types";
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
+import Typography from "@mui/material/Typography";
 
 /*mui global style */
-const globalTheme = createTheme({typography:{fontFamily: 'Kanit'}});
+const globalTheme = createTheme({typography: {fontFamily: "Kanit"}});
 
 /* mui tabs */
 function TabPanel(props) {
   const {children, value, index, ...other} = props;
   return (
-    <div role = "tabpanel" hidden = {value !== index} id = {`simple-tabpanel-${index}`} aria-labelledby = {`simple-tab-${index}`} {...other }>
+    <div role = "tabpanel" hidden = {value !== index} id = {`simple-tabpanel-${index}`} aria-labelledby = {`simple-tab-${index}`} {...other}>
         {value === index && (<Box sx = {{p: 2}}><Typography>{children}</Typography></Box>)}
     </div>);}
 TabPanel.propTypes = {children: PropTypes.node, index: PropTypes.number.isRequired, value: PropTypes.number.isRequired};
-function a11yProps(index) {return {id: `simple-tab-${index}`, 'aria-controls': `simple-tabpanel-${index}`,};}
+function a11yProps(index) {return {id: `simple-tab-${index}`, "aria-controls": `simple-tabpanel-${ index }`};}
 
 /* loadable user interface */
 function ButtonSwitch(props) {
@@ -45,7 +46,7 @@ function ButtonSwitch(props) {
           <div className = "Box"><h3>Add additional information here.</h3></div>
         </div>
       </main></>);
-    case "B": return /*personal information */ (<><main className="Placeholder">TEST B</main></>);
+    case "B": return /*personal information */ (<><main className = "Placeholder">TEST B</main></>);
     case "C": return /* backend practice */ (
       <ThemeProvider theme = {globalTheme}>
         <Box className = "Tabs-Container">
@@ -56,8 +57,8 @@ function ButtonSwitch(props) {
       <ThemeProvider theme = {globalTheme}>
         <Box className = "Tabs-Container">
           <Box className = "Tabs-Header"><h1>Our International Partners</h1></Box>
-          <Box sx = {{widthborderBottom: 2, borderColor: 'divider' }}>
-            <Tabs value = {value} onChange={handleChange} aria-label = "basic tabs example" centered>
+          <Box sx = {{widthborderBottom: 2, borderColor: "divider"}}>
+            <Tabs value = {value} onChange = {handleChange} aria-label = "basic tabs example" centered>
               <Tab label = "Eartheye Space" {...a11yProps(0)} />
               <Tab label = "ICEYE" {...a11yProps(1)} />
               <Tab label = "NTT DATA" {...a11yProps(2)} />
@@ -68,11 +69,11 @@ function ButtonSwitch(props) {
           </Box>
           <TabPanel value = {value} index = {0}>
             <Box sx = {{flexGrow: 1}}>
-              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
                 <Grid xs = {6}>
-                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
+                  <Image src = {Sample} alt = "Sample" fit = "contain"m/>
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs = {6}>
                   <h1>Eartheye Space</h1>
                   <h3>Driven by delightful experiences, transparency, global reach, local touch, and sustainability, Eartheye Space is committed to solving timely access and affordability issues with geospatial data. The earth observation (EO) business models are broken. The gaps between demand and supply of 'tasked data' and data 'haves' and 'have-nots' motivates the company to fix these gaps through business model innovations and technology.</h3>
                   <br></br><br></br>
@@ -83,9 +84,9 @@ function ButtonSwitch(props) {
           </TabPanel>
           <TabPanel value = {value} index = {1}>
             <Box sx = {{flexGrow: 1}}>
-              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
                 <Grid xs = {6}>
-                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
+                  <Image src = {Sample} alt = "Sample"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>ICEYE</h1>
@@ -98,9 +99,9 @@ function ButtonSwitch(props) {
           </TabPanel>
           <TabPanel value = {value} index = {2}>
             <Box sx = {{flexGrow: 1}}>
-              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
-                <Grid xs = {6}>
-                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
+              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
+                <Grid className = "Image-Container" xs = {6}>
+                  <Image src = {Sample} alt = "Sample"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>NTT DATA</h1>
@@ -113,9 +114,9 @@ function ButtonSwitch(props) {
           </TabPanel>
           <TabPanel value = {value} index = {3}>
             <Box sx = {{flexGrow: 1}}>
-              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
-                <Grid xs = {6}>
-                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
+              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
+                <Grid className = "Image-Container" xs = {6}>
+                  <Image src = {Sample} alt = "Sample"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>planet.</h1>
@@ -128,9 +129,9 @@ function ButtonSwitch(props) {
           </TabPanel>
           <TabPanel value = {value} index = {4}>
             <Box sx = {{flexGrow: 1}}>
-              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
-                <Grid xs = {6}>
-                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
+              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
+                <Grid className = "Image-Container" xs = {6}>
+                  <Image src = {Sample} alt = "Sample"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>RESTEC</h1>
@@ -143,11 +144,11 @@ function ButtonSwitch(props) {
           </TabPanel>
           <TabPanel value = {value} index = {5}>
             <Box sx = {{flexGrow: 1}}>
-              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
-                <Grid xs = {6}>
-                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
+              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
+                <Grid className = "Image-Container" xs = {6}>
+                  <Image src = {Sample} alt = "Sample"/>
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs = {6}>
                   <h1>SPACEKNOW</h1>
                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
                   <br></br><br></br>
@@ -162,17 +163,17 @@ function ButtonSwitch(props) {
       <ThemeProvider theme = {globalTheme}>
         <Box className = "Tabs-Container">
           <Box className = "Tabs-Header"><h1>Our Products</h1></Box>
-          <Box sx = {{widthborderBottom: 2, borderColor: 'divider'}}>
-            <Tabs value = {value} onChange={handleChange} aria-label = "basic tabs example" centered>
+          <Box sx = {{widthborderBottom: 2, borderColor: "divider"}}>
+            <Tabs value = {value} onChange = {handleChange} aria-label = "basic tabs example" centered>
               <Tab label = "PCiS" {...a11yProps(0)} />
               <Tab label = "SEEDs" {...a11yProps(1)} />
             </Tabs>
           </Box>
           <TabPanel value = {value} index = {0}>
             <Box sx = {{flexGrow: 1}}>
-              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+              <Grid className = "Image-Container" container spacing = {4} sx = {{m: "4vmin"}}>
                 <Grid xs = {6}>
-                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
+                  <Image src = {Sample} alt = "Sample"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>PCiS</h1>
@@ -182,9 +183,9 @@ function ButtonSwitch(props) {
           </TabPanel>
           <TabPanel value = {value} index = {1}>
             <Box sx = {{flexGrow: 1}}>
-              <Grid container spacing = {4} sx = {{m: '4vmin'}}>
+              <Grid className = "Image-Container" container spacing = {4} sx = {{m: "4vmin"}}>
                 <Grid xs = {6}>
-                  <img src = {Sample} className = "Sample-Image" alt = "Sample"/>
+                  <Image src = {Sample} alt = "Sample"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>SEEDs</h1>
@@ -200,14 +201,14 @@ function ButtonSwitch(props) {
           <Box className = "Tabs-Header-Leaflet"><h1>Our Location</h1></Box>
         </Box>
       </ThemeProvider>
-      <MapContainer id = "MapRender" center={[14.5818781, 121.0605654]} zoom={15} scrollWheelZoom={true} key={new Date().getTime()}>
+      <MapContainer id = "MapRender" center = {[14.5818781, 121.0605654]} zoom = {12} scrollWheelZoom maxZoom = {16} minZoom = {8} key = {new Date().getTime()}>
           <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution = "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
+            url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={[14.5818781, 121.0605654]}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
+          <Marker className position={[14.5818781, 121.0605654]}>
+            <Popup className="CustomPopUp">
+              <h4>Unit 1604, OMM-CITRA Building,<br></br>39 San Miguel Avenue, Ortigas Center<br></br>Pasig City, Philippines</h4>
             </Popup>
           </Marker>
         </MapContainer></>);
@@ -223,14 +224,14 @@ function ButtonSwitch(props) {
 
 function App() {
   const buttonValuesArray = [
-    {name: "A", icon: HomeOutlined},
-    {name: "B", icon: HomeOutlined},
-    {name: "C", icon: GroupsOutlined},
-    {name: "D", icon: HandshakeOutlined},
-    {name: "E", icon: SaveAltOutlined},
-    {name: "F", icon: HomeOutlined},
-    {name: "G", icon: HomeOutlined},
-    {name: "H", icon: HomeOutlined}];
+    {name: "A", icon: HomeOutlined, size: "medium"},
+    {name: "B", icon: HomeOutlined, size: "medium"},
+    {name: "C", icon: GroupsOutlined, size: "medium"},
+    {name: "D", icon: HandshakeOutlined, size: "medium"},
+    {name: "E", icon: SaveAltOutlined, size: "medium"},
+    {name: "F", icon: HomeOutlined, size: "medium"},
+    {name: "G", icon: HomeOutlined, size: "medium"},
+    {name: "H", icon: HomeOutlined, size: "medium"}];
   const [buttonValue, setButtonValue] = React.useState("0"); 
   const [oldValue, setOldValue] = React.useState("Z");
   /* button interaction functions */
@@ -253,14 +254,14 @@ function App() {
               onClick = {() => {clickButton(buttonName.name)}}
               onMouseOver = {() => hoverButton(buttonName.name)}
               onMouseOut = {() => exitButton(buttonName.name)}>
-                <buttonName.icon className="" fontSize = "large"/>
+                <buttonName.icon fontSize =	{buttonName.size}/>
             </div>))}
       </header>
       <footer>
         <a className = "Link-1" href = "https://linkedin.com/in/andrew-timothy-cervantes" rel = "noreferrer" target = "_blank">LinkedIn</a>
         <a className = "Link-2" href = "https://github.com/pagpapahinuhod" rel = "noreferrer" target = "_blank">GitHub</a>
         <a className = "Link-3" href = "http://facebook.com/pagpapahinuhod" rel = "noreferrer" target = "_blank">Facebook</a>
-        <a className = "Link-4" href = "https://www.geospectrum.com.ph/" rel = "noreferrer" target = "_blank">Geospectrum Marketing Services, Inc. 2023</a>
+        <a className = "Link-4" href = "https://www.geospectrum.com.ph/" rel = "noreferrer" target = "_blank">Geospectrum Marketing Services 2023</a>
       </footer>
     </div>);}
 

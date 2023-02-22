@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: center;
   background: #000000;
-  font-size: 6vmin;
+  font-size: 8vmin;
   text-align: center;
   color: #ffffff;}
 
@@ -34,6 +34,7 @@ header {
   border: none;
   background: #000000;}
 
+  /* hover animation can be improved */
 .Key-A:hover {background: #e64343;}
 .Key-B:hover {background: #e67b3d;}
 .Key-C:hover {background: #e6cd60;}
@@ -63,14 +64,10 @@ main {
   display: flex;
   justify-content: center;}
 
-.Sample-Image {
-  width: 95%;}
-
 .Tabs-Container-Leaflet {padding: 8vmin;}
 .Tabs-Header-Leaflet {
   position: absolute;
-  width: 25%;
-  margin: 2vmin auto 0 auto;
+  margin: 2vmin 24vmin 0 24vmin;
   left: 0;
   right: 0;
   z-index: 100;
@@ -84,8 +81,9 @@ main {
   top: 0;
   z-index: 0;
   height: 100%;
-  width: 100%;
-}
+  width: 100%;}
+
+.CustomPopUp {font-family: "Kanit";}
 
 .Default {
   display: flex;

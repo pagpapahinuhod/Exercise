@@ -10,7 +10,8 @@
   width: 100vw;
   background: #ffffff;
   font-family: 'Kanit', sans-serif;
-  font-weight: bold;}
+  font-weight: bold;
+  overflow: auto;}
 
 header {
   width: 100vw;
@@ -66,7 +67,7 @@ main {
 .Tabs-Container-Leaflet {padding: 8vmin;}
 .Tabs-Header-Leaflet {
   position: absolute;
-  margin: 2vmin 24vmin 0 24vmin;
+  margin: 2vmin 24vw 0 24vw;
   left: 0;
   right: 0;
   z-index: 100;

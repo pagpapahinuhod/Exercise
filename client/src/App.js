@@ -68,94 +68,82 @@ function ButtonSwitch(props) {
             </Tabs>
           </Box>
           <TabPanel value = {value} index = {0}>
-            <Box>
-              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample" fit = "cover"/>    
-                </Grid>
-                <Grid xs = {6}>
-                  <h1>Eartheye Space</h1>
-                  <h3>Driven by delightful experiences, transparency, global reach, local touch, and sustainability, Eartheye Space is committed to solving timely access and affordability issues with geospatial data. The earth observation (EO) business models are broken. The gaps between demand and supply of 'tasked data' and data 'haves' and 'have-nots' motivates the company to fix these gaps through business model innovations and technology.</h3>
-                  <br></br><br></br>
-                  <p className = "Partner-Link">Learn more about <a href = "https://www.eartheye.space" rel = "noreferrer" target = "_blank">Eartheye Space</a>.</p>
-                </Grid>
+            <Grid container spacing = {4} sx = {{m: "4vmin", maxHeight: "70vh"}}>
+              <Grid xs = {6}>
+                <Image src = {Sample} alt = "Sample" fit = "cover"/>    
               </Grid>
-            </Box>
+              <Grid xs = {6}>
+                <h1>Eartheye Space</h1>
+                <h3>Driven by delightful experiences, transparency, global reach, local touch, and sustainability, Eartheye Space is committed to solving timely access and affordability issues with geospatial data. The earth observation (EO) business models are broken. The gaps between demand and supply of 'tasked data' and data 'haves' and 'have-nots' motivates the company to fix these gaps through business model innovations and technology.</h3>
+                <br></br><br></br>
+                <p className = "Partner-Link">Learn more about <a href = "https://www.eartheye.space" rel = "noreferrer" target = "_blank">Eartheye Space</a>.</p>
+              </Grid>
+            </Grid>
           </TabPanel>
           <TabPanel value = {value} index = {1}>
-            <Box>
-              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
-                </Grid>
-                <Grid xs = {6}>
-                  <h1>ICEYE</h1>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
-                  <br></br><br></br>
-                  <p className = "Partner-Link">Learn more about <a href = "https://www.iceye.com" rel = "noreferrer" target = "_blank">ICEYE</a>.</p>
-                </Grid>
+            <Grid container spacing = {4} sx = {{m: "4vmin", maxHeight: "70vh"}}>
+              <Grid xs = {6}>
+                <Image src = {Sample} alt = "Sample" fit = "cover"/>
               </Grid>
-            </Box>
+              <Grid xs = {6}>
+                <h1>ICEYE</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
+                <br></br><br></br>
+                <p className = "Partner-Link">Learn more about <a href = "https://www.iceye.com" rel = "noreferrer" target = "_blank">ICEYE</a>.</p>
+              </Grid>
+            </Grid>
           </TabPanel>
           <TabPanel value = {value} index = {2}>
-            <Box>
-              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
-                </Grid>
-                <Grid xs = {6}>
-                  <h1>NTT DATA</h1>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
-                  <br></br><br></br>
-                  <p className = "Partner-Link">Learn more about <a href = "https://www.nttdata.com/global/en" rel = "noreferrer" target = "_blank">NTT DATA</a>.</p>
-                </Grid>
+            <Grid container spacing = {4} sx = {{m: "4vmin", maxHeight: "70vh"}}>
+              <Grid xs = {6}>
+                <Image src = {Sample} alt = "Sample" fit = "cover"/>
               </Grid>
-            </Box>
+              <Grid xs = {6}>
+                <h1>NTT DATA</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
+                <br></br><br></br>
+                <p className = "Partner-Link">Learn more about <a href = "https://www.nttdata.com/global/en" rel = "noreferrer" target = "_blank">NTT DATA</a>.</p>
+              </Grid>
+            </Grid>
           </TabPanel>
           <TabPanel value = {value} index = {3}>
-            <Box>
-              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
-                </Grid>
-                <Grid xs = {6}>
-                  <h1>planet.</h1>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
-                  <br></br><br></br>
-                  <p className = "Partner-Link">Learn more about <a href = "https://www.planet.com" rel = "noreferrer" target = "_blank">planet.</a></p>
-                </Grid>
+            <Grid container spacing = {4} sx = {{m: "4vmin", maxHeight: "70vh"}}>
+              <Grid xs = {6}>
+                <Image src = {Sample} alt = "Sample" fit = "cover"/>
               </Grid>
-            </Box>
+              <Grid xs = {6}>
+                <h1>planet.</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
+                <br></br><br></br>
+                <p className = "Partner-Link">Learn more about <a href = "https://www.planet.com" rel = "noreferrer" target = "_blank">planet.</a></p>
+              </Grid>
+            </Grid>
           </TabPanel>
           <TabPanel value = {value} index = {4}>
-            <Box>
-              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
-                </Grid>
-                <Grid xs = {6}>
-                  <h1>RESTEC</h1>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
-                  <br></br><br></br>
-                  <p className = "Partner-Link">Learn more about <a href = "https://www.restec.or.jp/en" rel = "noreferrer" target = "_blank">RESTEC</a>.</p>
-                </Grid>
+            <Grid container spacing = {4} sx = {{m: "4vmin", maxHeight: "70vh"}}>
+              <Grid xs = {6}>
+                <Image src = {Sample} alt = "Sample" fit = "cover"/>
               </Grid>
-            </Box>
+              <Grid xs = {6}>
+                <h1>RESTEC</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
+                <br></br><br></br>
+                <p className = "Partner-Link">Learn more about <a href = "https://www.restec.or.jp/en" rel = "noreferrer" target = "_blank">RESTEC</a>.</p>
+              </Grid>
+            </Grid>
           </TabPanel>
           <TabPanel value = {value} index = {5}>
-            <Box>
-              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
-                </Grid>
-                <Grid xs = {6}>
-                  <h1>SPACEKNOW</h1>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
-                  <br></br><br></br>
-                  <p className = "Partner-Link">Learn more about <a href = "https://spaceknow.com" rel = "noreferrer" target = "_blank">SPACEKNOW</a>.</p>
-                </Grid>
+            <Grid container spacing = {4} sx = {{m: "4vmin", maxHeight: "70vh"}}>
+              <Grid xs = {6}>
+                <Image src = {Sample} alt = "Sample" fit = "cover"/>
               </Grid>
-            </Box>
+              <Grid xs = {6}>
+                <h1>SPACEKNOW</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt egestas felis commodo faucibus. Ut at hendrerit dui. Duis pellentesque, mauris sit amet viverra commodo, nibh enim mattis massa, id tincidunt libero est eu mauris. Cras quis dolor in ante tincidunt tristique. Aenean vitae sem sed ligula pharetra aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mi eu odio consequat egestas posuere eu velit. Donec ultricies lectus sed ante interdum ultrices. Donec id euismod nulla. Fusce gravida iaculis metus, in porta arcu cursus quis. Praesent facilisis ex a ligula cursus, sed vestibulum metus luctus. Fusce ligula odio, euismod pulvinar convallis non, pretium in felis.</h3>
+                <br></br><br></br>
+                <p className = "Partner-Link">Learn more about <a href = "https://spaceknow.com" rel = "noreferrer" target = "_blank">SPACEKNOW</a>.</p>
+              </Grid>
+            </Grid>
           </TabPanel>
         </Box>
       </ThemeProvider>);
@@ -170,28 +158,24 @@ function ButtonSwitch(props) {
             </Tabs>
           </Box>
           <TabPanel value = {value} index = {0}>
-            <Box>
-              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
-                </Grid>
-                <Grid xs = {6}>
-                  <h1>PCiS</h1>
-                </Grid>
+            <Grid container spacing = {4} sx = {{m: "4vmin", maxHeight: "70vh"}}>
+              <Grid xs = {6}>
+                <Image src = {Sample} alt = "Sample" fit = "cover"/>
               </Grid>
-            </Box>
+              <Grid xs = {6}>
+                <h1>PCiS</h1>
+              </Grid>
+            </Grid>
           </TabPanel>
           <TabPanel value = {value} index = {1}>
-            <Box>
-              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
-                </Grid>
-                <Grid xs = {6}>
-                  <h1>SEEDs</h1>
-                </Grid>
+            <Grid container spacing = {4} sx = {{m: "4vmin", maxHeight: "70vh"}}>
+              <Grid xs = {6}>
+                <Image src = {Sample} alt = "Sample" fit = "cover"/>
               </Grid>
-            </Box>
+              <Grid xs = {6}>
+                <h1>SEEDs</h1>
+              </Grid>
+            </Grid>
           </TabPanel>
         </Box>
       </ThemeProvider>);

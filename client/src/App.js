@@ -68,10 +68,10 @@ function ButtonSwitch(props) {
             </Tabs>
           </Box>
           <TabPanel value = {value} index = {0}>
-            <Box sx = {{flexGrow: 1}}>
+            <Box>
               <Grid container spacing = {4} sx = {{m: "4vmin"}}>
                 <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample" fit = "contain"m/>
+                  <Image src = {Sample} alt = "Sample" fit = "cover"/>    
                 </Grid>
                 <Grid xs = {6}>
                   <h1>Eartheye Space</h1>
@@ -83,10 +83,10 @@ function ButtonSwitch(props) {
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {1}>
-            <Box sx = {{flexGrow: 1}}>
+            <Box>
               <Grid container spacing = {4} sx = {{m: "4vmin"}}>
                 <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample"/>
+                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>ICEYE</h1>
@@ -98,10 +98,10 @@ function ButtonSwitch(props) {
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {2}>
-            <Box sx = {{flexGrow: 1}}>
+            <Box>
               <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid className = "Image-Container" xs = {6}>
-                  <Image src = {Sample} alt = "Sample"/>
+                <Grid xs = {6}>
+                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>NTT DATA</h1>
@@ -113,10 +113,10 @@ function ButtonSwitch(props) {
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {3}>
-            <Box sx = {{flexGrow: 1}}>
+            <Box>
               <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid className = "Image-Container" xs = {6}>
-                  <Image src = {Sample} alt = "Sample"/>
+                <Grid xs = {6}>
+                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>planet.</h1>
@@ -128,10 +128,10 @@ function ButtonSwitch(props) {
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {4}>
-            <Box sx = {{flexGrow: 1}}>
+            <Box>
               <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid className = "Image-Container" xs = {6}>
-                  <Image src = {Sample} alt = "Sample"/>
+                <Grid xs = {6}>
+                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>RESTEC</h1>
@@ -143,10 +143,10 @@ function ButtonSwitch(props) {
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {5}>
-            <Box sx = {{flexGrow: 1}}>
+            <Box>
               <Grid container spacing = {4} sx = {{m: "4vmin"}}>
-                <Grid className = "Image-Container" xs = {6}>
-                  <Image src = {Sample} alt = "Sample"/>
+                <Grid xs = {6}>
+                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>SPACEKNOW</h1>
@@ -170,10 +170,10 @@ function ButtonSwitch(props) {
             </Tabs>
           </Box>
           <TabPanel value = {value} index = {0}>
-            <Box sx = {{flexGrow: 1}}>
-              <Grid className = "Image-Container" container spacing = {4} sx = {{m: "4vmin"}}>
+            <Box>
+              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
                 <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample"/>
+                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>PCiS</h1>
@@ -182,10 +182,10 @@ function ButtonSwitch(props) {
             </Box>
           </TabPanel>
           <TabPanel value = {value} index = {1}>
-            <Box sx = {{flexGrow: 1}}>
-              <Grid className = "Image-Container" container spacing = {4} sx = {{m: "4vmin"}}>
+            <Box>
+              <Grid container spacing = {4} sx = {{m: "4vmin"}}>
                 <Grid xs = {6}>
-                  <Image src = {Sample} alt = "Sample"/>
+                  <Image src = {Sample} alt = "Sample" fit = "cover"/>
                 </Grid>
                 <Grid xs = {6}>
                   <h1>SEEDs</h1>
